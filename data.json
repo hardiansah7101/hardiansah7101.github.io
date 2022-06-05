@@ -1,0 +1,102 @@
+{
+  "name": "Muh. Hardiansah",
+  "home": "Hi, I am <span>Muh. Hardiansah</span> from Ponorogo, East Java, Indonesia. This is my personal website you are at. Great, ain't it!",
+  "about": "<h1>Muh <br /> Hardiansah</h1><h3>Web and Mobile App Developer</h3><p>I'm Ian, a software developer from Indonesia. I'm an experienced software developer with clean code for trending web or mobile apps. I am experienced in developing web with PHP technology using Laravel, Yii2, and CI frameworks.</br><br/>I am also experienced in developing mobile applications using React Native technology with the same code can be compiled into Android and IOS applications</p>",
+  "sosmed": {
+    "facebook": "https://www.facebook.com/ansah.kaco",
+    "instagram": "https://www.instagram.com/iankco",
+    "linkedin": "https://www.linkedin.com/in/muh-hardiansah7101"
+  },
+  "contact": {
+    "email": "hardiansah7101@gmail.com",
+    "whatsapp": "081911106262"
+  },
+  "portfolio": [
+    {
+      "type": "Mobile App",
+      "name": "Batu Tracking 19",
+      "link": "https://play.google.com/store/apps/details?id=com.batutracking19",
+      "images": [
+        {
+          "url": "/portfolio-data/bt19/bt19.jpeg"
+        },
+        {
+          "url": "/portfolio-data/bt19/bt19-2.jpeg"
+        }
+      ],
+      "description": "Batu Tracking 19 is a mobile application for community services, especially in Batu City, East Java, Indonesia. In this application there are features, including a marketplace, maps of tourist and event locations, and public services related to government administration."
+    },
+    {
+      "type": "Mobile App",
+      "name": "Silampari Smartcity",
+      "link": "https://play.google.com/store/apps/details?id=com.lubuksmart",
+      "images": [
+        {
+          "url": "/portfolio-data/silampari/1.png"
+        }
+      ],
+      "description": "Mobile application for community service portals in an area in South Sumatra, Indonesia. <br/>In the application there are several services such as public cctv, community reports, public maps, commodity prices, news, agenda information, and sectoral data information."
+    },
+    {
+      "type": "Mobile App",
+      "name": "Kalender Pintar Pengasuhan",
+      "link": "https://play.google.com/store/apps/details?id=com.bkkbn1000hpk",
+      "images": [
+        {
+          "url": "/portfolio-data/1000hpk/1.png"
+        },
+        {
+          "url": "/portfolio-data/1000hpk/2.png"
+        }
+      ],
+      "description": "Aplikasi Kalender Pintar Pengasuhan (Smart Parenting Calendar Application) is a calendar application that is used to improve the abilities and skills of parents in caring for children properly and correctly at 1000 HPK so that children grow and develop optimally."
+    },
+    {
+      "type": "Web App",
+      "name": "Mart-Qu Simple Online Shop",
+      "link": "https://mart-qu.com",
+      "images": [
+        {
+          "url": "/portfolio-data/martqu/1.png"
+        },
+        {
+          "url": "/portfolio-data/martqu/2.png"
+        }
+      ],
+      "description": "Simple online shop website for grocery store. This website was built using the laravel framework."
+    },
+    {
+      "type": "Mobile App",
+      "name": "I-Salam Waqf App",
+      "link": "https://play.google.com/store/apps/details?id=com.wakafisalam",
+      "images": [
+        {
+          "url": "/portfolio-data/isalam/1.png"
+        }
+      ],
+      "description": "I-Salam is a digital cash waqf platform in Indonesia.<br/>With the Waqf I-Salam application you will easily make waqf and help people around in need."
+    },
+    {
+      "type": "Mobile App",
+      "name": "HOMEi Contractor App",
+      "link": "https://play.google.com/store/apps/details?id=com.home_i",
+      "images": [
+        {
+          "url": "/portfolio-data/homei/1.png"
+        }
+      ],
+      "description": "The Homei contractor application is a contractor application to make it easier for people to consult in the construction of houses and buildings.<br/><br/> People can consult directly through the chat in the application. <br/><br/> They can submit a new project and project budget only through the application and the technicians will come to the site to check the site.<br/><br/> One can also hire a small technician to fix or fix a problem at home and the technician will come"
+    },
+    {
+      "type": "Mobile App",
+      "name": "TIM App - Sales Monitoring",
+      "link": "https://play.google.com/store/apps/details?id=id.timapp.internusa",
+      "images": [
+        {
+          "url": "/portfolio-data/timapp/1.png"
+        }
+      ],
+      "description": "Realtime sales, warehouse, finance & warehouse monitoring management application for companies."
+    }
+  ]
+}
