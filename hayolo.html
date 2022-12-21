@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oit Dian 🥺</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono">
+    <style>
+        body {
+            height: max-content;
+            width: max-content;
+            background-color: aliceblue;
+            font-family: 'Martian Mono';
+        }
+
+        .container-style {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            visibility: hidden;
+        }
+
+        img {
+            align-self: center;
+            width: 150px;
+            height: 150px;
+        }
+
+        button {
+            background-color: cadetblue;
+            font-family: 'Martian Mono';
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 9px;
+            color: gray;
+            z-index: 10;
+        }
+
+        .container-random-position {
+            height: 44%;
+            width: 100%;
+            position: relative;
+        }
+
+        #txtNggak {
+            visibility: hidden;
+        }
+
+        .catatan {
+            font-size: 9px;
+            color: grey;
+        }
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-style" id="awal">
+        <h3 style="text-align: center;">OIT DIAN</h3>
+        <br />
+        <img src="https://media.tenor.com/d4sPgSJml54AAAAC/opihomm-funny.gif">
+        <h5>Apa Kabar?</h5>
+        <h5>Klik Tombol Dibawah Dong... 🥺🥺</h5>
+        <br />
+        <button onclick="handleBukaKedua()">KLIK DISINI NIH...</button>
+    </div>
+    <div class="container-style" style="height: 100%;" id="kedua">
+        <h3 style="text-align: center;">OIT DIAN</h3>
+        <br />
+        <img src="https://i.pinimg.com/originals/41/8c/09/418c090ec164c7d3d18a5f27dbb81eb1.gif" id="img-kedua">
+        <h5 style="margin-bottom: 2px;">Boleh bagi nomor WA ga ya...? 🥺🥺</h5>
+        <p class="catatan">Jangan dipencet Nggak nanti nyesel wkwkw</p>
+        <br />
+        <button onclick="handleBukaKetiga()">Boleh 😁</button>
+        <br /><br />
+        <div class="container-random-position">
+            <div id="random-content">
+                <button style="background-color: chocolate;" onclick="handleNggak()">Nggak ☹️</button>
+                <p id="txtNggak">Yahh 🥺</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-style" id="ketiga">
+        <h3 style="text-align: center;">OIT DIAN</h3>
+        <br />
+        <img src="https://i.pinimg.com/originals/4b/c8/96/4bc896e1f0be279836962eb325c20e52.gif" id="imgFinal">
+        <h5 id="txtFinal">ASKDHASDGFBYRGF.... wkwkwkwkw</h5>
+        <!-- <h5>Ketikin yaa... wkwkwk</h5> -->
+        <br />
+        <input type="number" placeholder="Ketikin disini ya... wkwk" id="inputNomor" oninput="handleOnChangeNomor()" />
+        <br />
+        <br />
+        <br />
+        <button onclick="handleFinal()" style="background-color: rgb(213, 211, 211);" disabled id="btnSimpanNomor">Ketikin dulu biar<br/>tombolnya bisa hehe</button>
+        <p class="catatan" style="visibility: hidden; font-size: 10px;" id="txtFinalCatatan">Screenshoot in kirim ke Ansah wkwkwkwwk<br/>Atau hujat langsung orangnya <a href="https://wa.me/+6281911106262" style="color: rgb(59, 0, 161); font-weight: bold;">Disini</a></p>
+    </div>
+    <div class="footer">
+        <p>Copyright © dilarang ngopy wkwkw</p>
+    </div>
+</body>
+
+<script>
+    const awal = document.getElementById('awal')
+    const kedua = document.getElementById('kedua')
+    const ketiga = document.getElementById('ketiga')
+    const imgKedua = document.getElementById('img-kedua')
+    const nggak = document.getElementById('random-content')
+    const txtNggak = document.getElementById('txtNggak')
+    const inputNomor = document.getElementById('inputNomor')
+    const btnSimpanNomor = document.getElementById('btnSimpanNomor')
+    const imgFinal = document.getElementById('imgFinal')
+    const txtFinal = document.getElementById('txtFinal')
+    const txtFinalCatatan = document.getElementById('txtFinalCatatan')
+
+    awal.style.visibility = "visible"
+
+    const handleBukaKedua = () => {
+        awal.style.visibility = "hidden"
+        kedua.style.visibility = "visible"
+    }
+
+    const handleBukaKetiga = () => {
+        txtNggak.style.visibility = 'hidden'
+        kedua.style.visibility = "hidden"
+        ketiga.style.visibility = "visible"
+    }
+
+    const handleFinal = () => {
+        imgFinal.src = "https://i.pinimg.com/originals/11/f1/ea/11f1eaa20db67b0b231171493dfa33fe.gif"
+        txtFinal.textContent = "ALHAMDULILLAHH... WKWKWKW"
+        inputNomor.disabled = true
+        txtFinalCatatan.style.visibility = "visible"
+        btnSimpanNomor.style.visibility = "hidden"
+    }
+
+    const handleNggak = () => {
+        imgKedua.src = "https://i.pinimg.com/originals/dd/bc/44/ddbc443c321f4d15180aeab79929532a.gif"
+        nggak.style.position = 'absolute'
+        nggak.style.top = getRandomInt(0, 80) + "%";
+        nggak.style.left = getRandomInt(0, 80) + "%";
+        txtNggak.style.visibility = 'visible'
+    }
+
+    const handleOnChangeNomor = () => {
+        console.log(inputNomor.value)
+        if (inputNomor.value.length <= 8) {
+            btnSimpanNomor.style.backgroundColor = "rgb(213, 211, 211)"
+            btnSimpanNomor.innerHTML = "Ketikin dulu biar<br/>tombolnya bisa hehe"
+            btnSimpanNomor.disabled = true
+        } else {
+            btnSimpanNomor.style.backgroundColor = "cadetblue"
+            btnSimpanNomor.innerHTML = "Udah bisa di nih..<br/>Nomernya harus bener ya 😁"
+            btnSimpanNomor.disabled = false
+        }
+    }
+
+    function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
+
+</html>
