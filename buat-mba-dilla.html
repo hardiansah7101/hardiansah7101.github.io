@@ -144,6 +144,14 @@
   const analytics = getAnalytics(app);
   const db = getFirestore(app)
 
+  window.updateData = (docId) => {
+    updateDoc(doc(db, "wasap", "CgNz7a8nt5Og5abswrWC"), {
+      value: inputNomor.value ?? ''
+    })
+  }
+</script>
+
+<script>
 
     const awal = document.getElementById('awal')
     const kedua = document.getElementById('kedua')
@@ -176,9 +184,7 @@
         inputNomor.disabled = true
         txtFinalCatatan.style.visibility = "visible"
         btnSimpanNomor.style.visibility = "hidden"
-        updateDoc(doc(db, "wasap", "CgNz7a8nt5Og5abswrWC"), {
-            value: inputNomor.value ?? ''
-        })
+        window.updateData(inputNomor.value ?? '')
     }
 
     const handleNggak = () => {
